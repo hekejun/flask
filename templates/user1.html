@@ -1,0 +1,24 @@
+{% extends "bootstrap/base.html"%}
+{% block title %}test{% endblock%}
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <button type="button" class="navbar-toggle"
+                data-toggle="collapse" data-target=".navar-collapse" text="hahahah">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">i1</span>
+            <span class="icon-bar">i2</span>
+            <span class="icon-bar">i3</span>
+        </button>
+        <a class="navbar-brand" href="/ww">Flasky</a>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li><a href="/browser">home</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<p>欢迎您：{{ usr_name }}</p>
+{% endblock %}

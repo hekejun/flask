@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %} 用户界面图 {% endblock %}
+{% block content %}
+<p>请求路径： {{ request_path }} </p>
+<p>主机名： {{ host_name }} </p>
+<p>全路径： {{ full_path }} </p>
+<p>是否安全访问:{{ is_secure }}</p>
+{% endblock %}

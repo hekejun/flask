@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} 模拟访问 {% endblock %}
+{% block content %}
+{% if error_msg %}
+    <p style="color:red;">{{ error_msg }}</p>
+{% endif %}
+<form action="/search/" method="get">
+<p><input type="text" name="user"></p>
+<p><input type="password" name="pw"></p>
+<p><input type="submit" value="search"></p>
+</form>
+{% endblock %}

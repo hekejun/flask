@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} 模拟访问 {% endblock %}
+{% block content %}
+{% if error_msg %}
+    <p style="color:red;">{{ error_msg }}</p>
+{% endif %}
+
+<form action="/register/" method="post">
+<p>用户名：<input type="text" name="user"></p>
+<p>密码：<input type="text" name="pw"></p>
+<p>邮箱：<input type="text" name="mail"></p>
+<p><input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
